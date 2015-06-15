@@ -1,1 +1,33 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="16" inline="true" x="97" y="39">
+    <field name="VAR">i</field>
+    <value name="VALUE">
+      <block type="math_number" id="23">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+    <next>
+      <block type="controls_whileUntil" id="33" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="40" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="variables_get" id="50">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="57">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_stop" id="67"></block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
